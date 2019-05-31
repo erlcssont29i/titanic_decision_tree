@@ -1,5 +1,6 @@
 # titanic_decision_tree
 kaggle_titanic
+```
 # 导入数据集
 set.seed(123)
 PATH <- './data/titanic_csv.csv'
@@ -79,3 +80,4 @@ control <- rpart.control(
 
 tune.fit <- rpart(survived ~ ., data = train.data, method = 'class', control = control)
 AccuracyTune(tune.fit)
+```
